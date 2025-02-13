@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+<html>
+  <head>
+    <title>Valentine Proposal</title>
+    <style>
+      div {
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      #no {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Will you be my valentine?</h1>
+      <img id="image"src="mocha_bear.gif" alt="mocha">
+
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+    </div>
+    
+    <script>
+      document.getElementById("yesButton").addEventListener("click", function () {
+      });
+
+      var b = document.getElementById("noButton");
+      b.addEventListener("click", change);
+
+      function change() {
+        var i = Math.floor(Math.random() * 1000);
+        var j = Math.floor(Math.random() * 700);
+        b.style.left = i + "px";
+        b.style.top = j + "px";
+      }
+    </script>
+    <script src="valentine.js"></script>
+  </body>
+</html>
+
